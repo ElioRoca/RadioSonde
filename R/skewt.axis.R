@@ -108,10 +108,10 @@ function(BROWN = "brown", GREEN = "green", redo = FALSE, ...)
 		0.10000000000000001)
 	# --- label horizontal axis with degrees F from -20,100 by 20
 	ypos <- skewty(1050)
-	degc <- ((seq(-20, 100, by = 20) - 32) * 5)/9
-	axis(1, at = skewtx(degc, ypos), labels = seq(-20, 100, by = 20), pos
+	degc <- seq(-30, 40, by = 10)
+	axis(1, at = skewtx(degc, ypos), labels = seq(-30, 40, by = 10), pos
 		 = ymax)
-	mtext(side = 1, line = 1, "Temperature (F)")
+	mtext(side = 1, line = 1, "Temperature (°C)")
 	#---------------------------------------------------------------------
 	# --- DRAW HORIZONTAL ISOBARS., LABEL VERTICAL AXIS
 	#---------------------------------------------------------------------
